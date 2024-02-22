@@ -1,0 +1,38 @@
+.Detail {
+  padding: 20px;
+}
+
+.item-thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.item-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.item-description,
+.item-price,
+.item-discount,
+.item-rating,
+.item-stock,
+.item-brand,
+.item-category {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.item-images {
+  display: flex;
+  gap: 10px;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
