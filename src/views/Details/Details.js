@@ -4,15 +4,17 @@ import {
   useState
 } from 'react';
 import {
-  Link,
   useParams
 } from 'react-router-dom';
 import {
   BASE_URL,
   PORT
 } from '../../environment/environment';
+import { useNavigate } from 'react-router-dom';
 
 function Details() {
+  const navigate = useNavigate();
+
   const { id } = useParams();
   const [product, setProduct] = useState({});
 
@@ -26,7 +28,7 @@ function Details() {
   return (
     <div className="Detail">
       <header className="Results-header">
-        <Link to="/">←</Link>
+        <button onClick={() => navigate(-1)}>←</button>
         <p>Results for: {product.title}</p>
         <br></br>
       </header>
